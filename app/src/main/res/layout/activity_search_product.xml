@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/r111"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/seacrh_product"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:textSize="18dp"
+            android:textColorHint="@android:color/white"/>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/seacrh_product"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/r111">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
